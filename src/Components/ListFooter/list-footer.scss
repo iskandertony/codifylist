@@ -1,6 +1,13 @@
 @import "src/Styles/Fonts";
 @import "src/Styles/Colors";
 
+
+.list_container_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .list_container_item {
   display: flex;
 align-items: center;

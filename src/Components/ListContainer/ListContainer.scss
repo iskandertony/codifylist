@@ -9,7 +9,7 @@
   padding: 20px;
   border-radius: 30px;
   background: $color-white;
-  max-width: 881px;
+  max-width: 70vw;
   height: 251px;
   margin-left: auto;
   margin-right: auto;
@@ -19,6 +19,8 @@
   margin-top: 30px ;
   overflow: hidden;
 }
+
+
 
 .list_container_gradient {
   position: absolute;
@@ -44,11 +46,7 @@ display: flex;
   @extend %text-style-21px;
 }
 
-.list_container_footer {
-  display: flex;
-justify-content: space-between;
-  align-items: center;
-}
+
 
 .list_container_header {
   display: flex;

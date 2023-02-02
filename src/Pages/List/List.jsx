@@ -3,8 +3,12 @@ import axios from 'axios'
 
 import './List.scss'
 import ListContainer from '../../Components/ListContainer/ListContainer'
+import { useDebouncedCallback } from 'use-debounce'
+import Search from '../../Components/Search/Search'
 const List = () => {
     const [api, setApi] = useState([])
+    const [filtered, setFiltered] = useState([])
+    const [seacrh, setSearch] = useState('')
     const [loading, setLoading] = useState(false)
     const baseURL = 'https://lets.codifylab.com/apis/vacancies/'
 
@@ -13,6 +17,7 @@ const List = () => {
         try {
             const response = await axios.get(baseURL)
             setApi(response.data)
+            return response.data
         } catch (error) {
             console.error(error)
         } finally {
@@ -20,14 +25,21 @@ const List = () => {
         }
     }
 
+    const handleSearch = useDebouncedCallback((e) => {
+        setFiltered(api.filter((item) => item.name.toLowerCase().includes(e.target.value)))
+    }, 1000)
+
     useEffect(() => {
-        getApi()
+        getApi().then((result) => setFiltered(result))
     }, [])
 
     return (
         <div>
-            {api.map((item, index, id) => (
-                <ListContainer data={item} />
+            <Search handle={handleSearch} />
+            {filtered.map((item, index, id) => (
+                <div key={item.id}>
+                    <ListContainer data={item} />
+                </div>
             ))}
         </div>
     )

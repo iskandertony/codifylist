@@ -2,6 +2,36 @@
 
 
 .list {
-  padding: 100px;
   background-color: $color-list;
+}
+
+@media (max-width: 768px) {
+  .list_container_space {
+    display: none;
+  }
+  .list_container_footer_name {
+    margin-right: 6px ;
+  }
+
+  .list_container_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .list_container {
+    max-width: 80vw !important;
+
+  }
+
+  .list_container_description_text {
+    margin-right: 6px;
+  }
+
+  .list_container_item {
+    flex-wrap: wrap;
+  }
 }

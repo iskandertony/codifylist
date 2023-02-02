@@ -19,6 +19,7 @@ const ListContainer = ({ data }) => {
         created_date,
         logo,
         response_count,
+        id,
     } = data
     return (
         <div className="list_container">

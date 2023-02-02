@@ -9,6 +9,18 @@
   justify-content: center;
   flex-direction: column;
 
+  @media (max-width: 768px) {
+    .input {
+      width: 70vw !important;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .input {
+      width: 80vw !important;
+    }
+  }
+
   .input {
     border: 1px solid $color-white;
     border-radius: 30px;
@@ -22,4 +34,6 @@
     @extend %text-style-21px;
     color: $color-white
   }
+
+
 }
