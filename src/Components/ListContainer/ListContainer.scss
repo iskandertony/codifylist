@@ -1,0 +1,69 @@
+@import "src/Styles/Fonts";
+@import "src/Styles/Colors";
+
+
+
+.list_container {
+  position: relative;
+  z-index: 12;
+  padding: 20px;
+  border-radius: 30px;
+  background: $color-white;
+  max-width: 881px;
+  height: 251px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px ;
+  overflow: hidden;
+}
+
+.list_container_gradient {
+  position: absolute;
+  background: linear-gradient(229.69deg, #8310F5 3.35%, #01ECFB 103.59%);
+  height: 10px;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.list_container_description {
+display: flex;
+  justify-content: flex-start;
+  margin-top: 18px;
+  margin-bottom: 16px;
+}
+.cvteg_content {
+  display: flex;
+  margin-bottom: 22px;
+}
+.list_container_name {
+  @extend %text-style-21px;
+}
+
+.list_container_footer {
+  display: flex;
+justify-content: space-between;
+  align-items: center;
+}
+
+.list_container_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list_container_name {
+max-width: 650px;
+}
+
+.list_container_description_sub {
+  display: flex;
+}
+
+.cvteg_content-mobile {
+  display: none;
+}

@@ -1,0 +1,32 @@
+@import "src/Styles/Fonts";
+@import "src/Styles/Colors";
+
+.list_container_item {
+  display: flex;
+align-items: center;
+}
+
+.list_container_space {
+  padding: 0px 20px;
+}
+
+.list_container_footer_text {
+  @extend %text-style-14px;
+  margin-left: 6px;
+  margin-right: 25px;
+}
+
+.list_container_footer_name {
+  @extend %text-style-12px;
+  margin-left: 4px;
+}
+
+.list_container_footer_img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.list_container_footer_response {
+  color: #3C3E40;
+}

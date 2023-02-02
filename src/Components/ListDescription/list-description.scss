@@ -1,0 +1,18 @@
+@import "src/Styles/Fonts";
+@import "src/Styles/Colors";
+
+.list_container_description_content {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 4px;
+}
+
+.list_container_description_item {
+  display: flex;
+}
+
+.list_container_description_text {
+  @extend %text-style-12px;
+  margin-left: 6px;
+  margin-right: 16px;
+}

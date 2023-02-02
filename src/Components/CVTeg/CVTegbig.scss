@@ -1,0 +1,23 @@
+@import "src/Styles/Fonts";
+@import "src/Styles/Colors";
+
+.cvtegbig {
+padding: 4px 24px;
+border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-cvteg;
+}
+
+.cvtegbig_coin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+}
+
+.cvtegbig_text {
+  color: $color-cvteg-text-big;
+  padding-right: 4px;
+}

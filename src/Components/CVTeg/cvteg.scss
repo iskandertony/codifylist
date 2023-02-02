@@ -1,0 +1,15 @@
+@import "src/Styles/Fonts";
+@import "src/Styles/Colors";
+
+
+.cvteg {
+background: $color-cvteg;
+border-radius: 17px;
+  margin-right: 10px;
+}
+
+.cvteg_text {
+  @extend %text-style-12px;
+  color: $color-cvteg-text;
+  padding: 1px 9px;
+}

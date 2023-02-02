@@ -1,0 +1,11 @@
+@import "src/Styles/Colors";
+@import "src/Styles/Fonts";
+
+.button {
+background: $color-button;
+  @extend %text-style-14px;
+  border-radius: 39px;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 31px;
+}

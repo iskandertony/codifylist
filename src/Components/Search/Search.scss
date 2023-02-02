@@ -1,0 +1,25 @@
+@import "src/Styles/Fonts";
+@import "src/Styles/Colors";
+
+.search {
+  padding: 50px;
+  background: $color-button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .input {
+    border: 1px solid $color-white;
+    border-radius: 30px;
+    width: 30vw;
+    height: 30px;
+    margin-top: 16px;
+    padding-left: 20px;
+  }
+
+  .text {
+    @extend %text-style-21px;
+    color: $color-white
+  }
+}
