@@ -17,8 +17,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 8px;
+    margin-right: 10px;
   }
+  .list_container_description_content {
+  flex-wrap: wrap;
 
+
+  }
+  .list_container_footer {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 460px) {
+  .list_container_footer_text {
+    margin-right: 40vw;
+  }
 }
 
 @media (max-width: 425px) {
@@ -31,7 +46,4 @@
     margin-right: 6px;
   }
 
-  .list_container_item {
-    flex-wrap: wrap;
-  }
 }
