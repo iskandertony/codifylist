@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 import './List.scss'
-import ListContainer from '../../Components/ListContainer/ListContainer'
+import ListContainer from '../../Components/Card/ListContainer'
 import { useDebouncedCallback } from 'use-debounce'
 import Search from '../../Components/Search/Search'
 const List = () => {

@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './ListContainer.scss'
 import Button from '../Button/button'
 import Cvteg from '../CVTeg/cvteg'
 import Cvtegbig from '../CVTeg/CVTegbig'
-import ListDescription from '../ListDescription/list-description'
-import ListFooter from '../ListFooter/list-footer'
+import ListDescription from '../Card Mid/list-description'
+import ListFooter from '../Card Footer/list-footer'
 const ListContainer = ({ data }) => {
     const {
         salary_from,
@@ -27,7 +28,9 @@ const ListContainer = ({ data }) => {
 
             <div className="list_container_header">
                 <div className="list_container_name">{name}</div>
-                <Button text="отликнуться" />
+                <Link to="/form" className="underline">
+                    <Button text="отликнуться" />
+                </Link>
             </div>
 
             <div>

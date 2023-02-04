@@ -1,0 +1,75 @@
+@import "src/Styles/Fonts";
+@import "src/Styles/Colors";
+
+.card_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-list;
+  padding: 100px;
+
+.input {
+width: 18vw;
+  opacity: 0.5;
+  padding: 4px 15px;
+  border-radius: 5px;
+  border: 1px solid $color-have;
+}
+  .singin {
+    @extend %text-style-14px;
+    color: $color-cvteg-text-big;
+  }
+}
+
+.card_form_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid $color-white;
+  border-radius: 30px;
+  padding: 60px 30px;
+  background-color: $color-white;
+}
+
+.card_form_checkbox {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 18px;
+}
+
+.card_form_checkbox_text {
+  margin-left: 10px;
+}
+
+.card_form_checkbox_text {
+  flex-wrap: wrap;
+  width: 200px;
+  @extend %text-style-12px;
+}
+
+.card_form_name{
+  margin-top: 15px;
+@extend %text-style-18px;
+  color: $color-name;
+}
+
+.card_form_input {
+  margin-top: 10px;
+  width: 20vw;
+}
+
+.card_form_button {
+  margin-top: 25px;
+}
+
+.card_form_have {
+margin-top: 42px;
+  @extend %text-style-14px;
+  color: $color-have;
+}
+.card_form_input_text {
+  @extend %text-style-12px;
+  color: $color-cvteg-text;
+
+}
